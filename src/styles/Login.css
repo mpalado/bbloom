@@ -1,0 +1,150 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* Base styles */
+.login-container {
+  background-color: #243c9d;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card layout */
+.login-card {
+  background: white;
+  width: 100%;
+  max-width: 800px; /* Increased from 400px */
+  padding: 3rem;    /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Typography */
+.title {
+  color: #243c9d;
+  font-size: 32px;    /* Larger font for desktop */
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;    /* Increased font size */
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Tab navigation */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  padding: 8px 16px;
+  border: none;
+  background: #f3f3f3;
+  cursor: pointer;
+}
+
+.tab-buttons button.active {
+  background-color: #243c9d;
+  color: white;
+  border-radius: 6px 0 0 6px;
+}
+
+.tab-buttons a button {
+  border-radius: 0 6px 6px 0;
+}
+
+/* Form elements */
+.login-form {
+  text-align: left;
+  max-width: 800px;   /* Wider form for desktop */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.login-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 15px;      /* Larger input fields */
+  font-size: 16px;    /* Bigger font size */
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Password field specific */
+.password-field {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  cursor: pointer;
+}
+
+/* Links */
+.forgot-password {
+  display: block;
+  font-size: 11px;
+  color: #243c9d;
+  text-align: right;
+  margin-bottom: 14px;
+  text-decoration: none;
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #243c9d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Buttons */
+.login-btn, .google-btn {
+  max-width: 800px;   /* Match form width */
+  padding: 15px;      /* Taller buttons */
+  font-size: 16px;    /* Larger button text */
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;     /* More spacing */
+  font-size: 14px;    /* Larger divider text */
+  color: #999;
+  text-align: center;
+}

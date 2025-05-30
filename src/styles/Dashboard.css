@@ -1,0 +1,133 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  color: #2563eb;
+  font-weight: bold;
+  padding: 24px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 16px;
+  margin-top: 8px;
+}
+
+.sidebar a {
+  padding: 8px;
+  text-decoration: none;
+  color: #374151;
+  border-radius: 4px;
+}
+
+.sidebar a:hover {
+  background-color: #e0f2fe;
+  color: #2563eb;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 16px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.header-banner {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  padding: 12px;
+  text-align: center;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.upload-button {
+  background-color: #facc15;
+  color: #1e40af;
+  font-weight: bold;
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-button:hover {
+  opacity: 0.9;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.stat-box {
+  background-color: #f9fafb;
+  padding: 12px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #d1d5db;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #34d399;
+}
