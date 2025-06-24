@@ -3,6 +3,15 @@ import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
+import './pages/Myquizzes';
+import MyQuizzes from './pages/Myquizzes';
+import StudyAnalytics from './pages/StudyAnalytics';
+import NotesSummarizer from './pages/NotesSummarizer';
+import GenerateQuiz from './pages/GenerateQuiz';
+import Settings from './pages/Settings';
+import MyNotes from './pages/MyNotes';
+
+
 
 function App() {
   return (
@@ -12,6 +21,12 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/myquizzes" element={<MyQuizzes />} /> 
+        <Route path="/study-analytics" element={<StudyAnalytics />} />
+        <Route path="/notes-summarizer" element={<NotesSummarizer />} />
+        <Route path="/generate-quiz" element={<GenerateQuiz />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/mynotes" element={<MyNotes />} />
       </Routes>
     </Router>
   );

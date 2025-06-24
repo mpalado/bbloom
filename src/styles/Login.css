@@ -2,21 +2,33 @@
 @tailwind components;
 @tailwind utilities; */
 /* Base styles */
+
+
+
+
+/* Ensure background covers the whole viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #243c9d;
+}
 .login-container {
   background-color: #243c9d;
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
-
 /* Card layout */
 .login-card {
   background: white;
-  width: 100%;
-  max-width: 800px; /* Increased from 400px */
-  padding: 3rem;    /* Increased padding */
+  padding: 2rem;
   border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
   text-align: center;
 }
@@ -72,6 +84,7 @@
   font-size: 14px;
   font-weight: bold;
   margin-top: 15px;
+  color: #243c9d; /* Set label color to match background */
 }
 
 .login-form input {
@@ -82,6 +95,14 @@
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  background: #fff; /* Ensure input background is white */
+  color: #999999;   /* Set input text color */
+}
+
+/* Make input placeholders white */
+.login-form input::placeholder {
+  color: #999999;
+  opacity: 1; /* Ensure full opacity for white */
 }
 
 /* Password field specific */
@@ -125,6 +146,8 @@
   border: 1px solid #ccc;
   border-radius: 6px;
   cursor: pointer;
+  color: #374151;
+  
 }
 
 .google-btn img {
