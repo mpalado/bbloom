@@ -10,6 +10,9 @@ import NotesSummarizer from './pages/NotesSummarizer';
 import GenerateQuiz from './pages/GenerateQuiz';
 import Settings from './pages/Settings';
 import MyNotes from './pages/MyNotes';
+import Summurizer from './pages/Summurizer';
+import UploadNotes from './pages/UploadNotes';
+import PricingPlans from './pages/PricingPlans';
 
 
 
@@ -27,6 +30,9 @@ function App() {
         <Route path="/generate-quiz" element={<GenerateQuiz />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/mynotes" element={<MyNotes />} />
+        <Route path="/summurizer" element={<Summurizer />} />
+        <Route path="/upload-notes" element={<UploadNotes />} />
+        <Route path="/pricing-plans" element={<PricingPlans />} />
       </Routes>
     </Router>
   );

@@ -172,7 +172,9 @@ const Settings = () => {
 
         <div style={section}>
           <div style={sectionTitle}>Subscription Plan</div>
-          <button style={upgradeBtn}>Upgrade Plan</button>
+          <Link to="/pricing-plans" style={{ textDecoration: 'none' }}>
+    <button style={upgradeBtn}>Upgrade Plan</button>
+  </Link>
           <p><strong>Free Plan</strong></p>
           <p style={planDetails}>5 quiz generations per month • Basic features</p>
           <ul style={planDetails}>

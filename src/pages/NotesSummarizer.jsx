@@ -87,11 +87,33 @@ export default function NotesSummarizer() {
           <Link to="/mynotes" style={{ textDecoration: 'none' }}><button style={openBtn}>📄 Open My Notes</button></Link>
         </div>
 
-        {/* Action Cards */}
-        <div style={{ display: 'flex', gap: '1.5rem', marginTop: '2rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
-          <ActionCard icon="📤" title="Upload Notes" subtitle="PDF, DOCX, TXT" />
-          <ActionCard icon="🧠" title="Summarize Notes" subtitle="Get quick AI summaries of your uploaded notes" />
-        </div>
+     {/* Action Cards */}
+<div
+  style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+    gap: '1.5rem',
+    marginTop: '2rem',
+    marginBottom: '2.5rem',
+    width: '100%',
+    alignItems: 'stretch'
+  }}
+>
+  <Link to="/upload-notes" style={{ textDecoration: 'none' }}>
+    <ActionCard
+      icon="📤"
+      title="Upload Notes"
+      subtitle="PDF, DOCX, TXT"
+    />
+  </Link>
+  <Link to="/summurizer" style={{ textDecoration: 'none' }}>
+    <ActionCard
+      icon="🧠"
+      title="Summarize Notes"
+      subtitle="Get quick AI summaries of your uploaded notes"
+    />
+  </Link>
+</div>
 
         {/* Recent Notes */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
