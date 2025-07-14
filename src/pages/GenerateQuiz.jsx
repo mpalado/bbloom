@@ -137,7 +137,8 @@ export default function GenerateQuiz() {
               borderRadius: '6px',
               border: '1px solid #ccc',
               background: '#f4f4f4',
-              marginTop: '0.3rem'
+              marginTop: '0.3rem',
+              color: '#000'
             }} value={selectedNote} onChange={(e) => setSelectedNote(e.target.value)}>
               <option value="">Select a note...</option>
               <option value="math">Mathematics Chapter 3</option>
@@ -161,7 +162,8 @@ export default function GenerateQuiz() {
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
               gap: '0.5rem 1rem',
-              marginBottom: '1rem'
+              marginBottom: '1rem',
+              color: '#000'
             }}>
               <Checkbox label="Multiple Choice" checked={questionTypes.multipleChoice} onChange={() => toggleQuestionType('multipleChoice')} />
               <Checkbox label="Short Answer" checked={questionTypes.shortAnswer} onChange={() => toggleQuestionType('shortAnswer')} />
@@ -171,7 +173,7 @@ export default function GenerateQuiz() {
 
             <p style={{ fontSize: '0.95rem', fontWeight: 600, color: '#333', marginBottom: '0.5rem' }}>Number of Questions</p>
             <input type="range" min="5" max="20" value={questionCount} onChange={(e) => setQuestionCount(e.target.value)} style={{ width: '100%' }} />
-            <p style={{ fontWeight: 600, marginBottom: 12 }}>{questionCount}</p>
+            <p style={{ fontWeight: 600, marginBottom: 12, color: '#000'}}>{questionCount}</p>
 
             <p style={{ fontSize: '0.95rem', fontWeight: 600, color: '#333', marginBottom: '0.5rem' }}>Difficulty Level</p>
             <div style={{

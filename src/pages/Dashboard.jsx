@@ -94,14 +94,83 @@ export default function Dashboard() {
         {/* Bottom Row */}
         <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
           {/* Upcoming Quizzes */}
-          <ModernCard>
-            <h3 style={cardTitle}>Upcoming Quizzes</h3>
-            <ul style={{ paddingLeft: '1.2rem', fontSize: '1rem', color: '#555' }}>
-              <li>Mathematics Chapter 4 <span style={pendingStyle}>Pending</span></li>
-              <li>History: World War II <span style={pendingStyle}>Pending</span></li>
-              <li>Science Lab Review <span style={pendingStyle}>Pending</span></li>
-            </ul>
-          </ModernCard>
+<ModernCard>
+  <h3 style={cardTitle}>Upcoming Quizzes</h3>
+  <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+    <ModernCard
+      style={{
+        background: '#f7f9fb',
+        minHeight: 'unset',
+        marginBottom: 0,
+        padding: '1rem 1.2rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+      }}
+    >
+      <span style={{ color: '#243c9d', fontWeight: 600 }}>Mathematics Chapter 4</span>
+      <span style={{
+        background: '#fffbe6',
+        color: '#f0a500',
+        fontWeight: 'bold',
+        borderRadius: '999px',
+        padding: '0.35em 1.2em',
+        fontSize: '0.98rem',
+        marginLeft: '1rem',
+        border: '1px solid #ffe08a',
+        display: 'inline-block'
+      }}>Pending</span>
+    </ModernCard>
+    <ModernCard
+      style={{
+        background: '#f7f9fb',
+        minHeight: 'unset',
+        marginBottom: 0,
+        padding: '1rem 1.2rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+      }}
+    >
+      <span style={{ color: '#243c9d', fontWeight: 600 }}>History: World War II</span>
+      <span style={{
+        background: '#fffbe6',
+        color: '#f0a500',
+        fontWeight: 'bold',
+        borderRadius: '999px',
+        padding: '0.35em 1.2em',
+        fontSize: '0.98rem',
+        marginLeft: '1rem',
+        border: '1px solid #ffe08a',
+        display: 'inline-block'
+      }}>Pending</span>
+    </ModernCard>
+    <ModernCard
+      style={{
+        background: '#f7f9fb',
+        minHeight: 'unset',
+        marginBottom: 0,
+        padding: '1rem 1.2rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+      }}
+    >
+      <span style={{ color: '#243c9d', fontWeight: 600 }}>Science Lab Review</span>
+      <span style={{
+        background: '#fffbe6',
+        color: '#f0a500',
+        fontWeight: 'bold',
+        borderRadius: '999px',
+        padding: '0.35em 1.2em',
+        fontSize: '0.98rem',
+        marginLeft: '1rem',
+        border: '1px solid #ffe08a',
+        display: 'inline-block'
+      }}>Pending</span>
+    </ModernCard>
+  </div>
+</ModernCard>
 
           {/* Quick Actions */}
           <ModernCard>

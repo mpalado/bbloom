@@ -81,9 +81,9 @@ export default function StudyAnalytics() {
           {/* Subject Breakdown */}
           <Card>
             <h3 style={cardTitle}>Subject Breakdown</h3>
-            <SubjectProgress label="Mathematics" percent={75} color="#243c9d" />
-            <SubjectProgress label="Science" percent={60} color="#1eb980" />
-            <SubjectProgress label="History" percent={45} color="#f0a500" />
+            <SubjectProgress label={<span style={{ color: "#000" }}>Mathematics</span>} percent={75} color="#243c9d" />
+            <SubjectProgress label={<span style={{ color: "#000" }}>Science</span>} percent={60} color="#1eb980" />
+            <SubjectProgress label={<span style={{ color: "#000" }}>History</span>} percent={45} color="#f0a500" />
           </Card>
         </div>
 
@@ -92,16 +92,39 @@ export default function StudyAnalytics() {
           {/* Recent Activity */}
           <Card>
             <h3 style={cardTitle}>Recent Activity</h3>
-            <ActivityItem color="green" text="Completed Math Quiz #15" info="2 hours ago • Score: 92%" />
-            <ActivityItem color="blue" text="Studied for 45 minutes" info="5 hours ago • Science Notes" />
-            <ActivityItem color="orange" text="Created new flashcard set" info="1 day ago • History Chapter 5" />
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+              <div style={{
+                background: '#f7f9fb',
+                borderRadius: '8px',
+                boxShadow: '0 2px 6px rgba(36,60,157,0.06)',
+                padding: '1rem 1.2rem'
+              }}>
+                <ActivityItem color="green" text={<span style={{ color: "#000" }}>Completed Math Quiz #15</span>} info="2 hours ago • Score: 92%" />
+              </div>
+              <div style={{
+                background: '#f7f9fb',
+                borderRadius: '8px',
+                boxShadow: '0 2px 6px rgba(36,60,157,0.06)',
+                padding: '1rem 1.2rem'
+              }}>
+                <ActivityItem color="blue" text={<span style={{ color: "#000" }}>Studied for 45 minutes</span>} info="5 hours ago • Science Notes" />
+              </div>
+              <div style={{
+                background: '#f7f9fb',
+                borderRadius: '8px',
+                boxShadow: '0 2px 6px rgba(36,60,157,0.06)',
+                padding: '1rem 1.2rem'
+              }}>
+                <ActivityItem color="orange" text={<span style={{ color: "#000" }}>Created new flashcard set</span>} info="1 day ago • History Chapter 5" />
+              </div>
+            </div>
           </Card>
 
           {/* Study Goals */}
           <Card>
             <h3 style={cardTitle}>Study Goals</h3>
-            <GoalProgress label="Daily Study Goal" value="3.2/2.5" percent={128} color="#1eb980" />
-            <GoalProgress label="Weekly Quiz Goal" value="3/5" percent={60} color="#f0a500" />
+            <GoalProgress label={<span style={{ color: "#000" }}>Daily Study Goal</span>} value="3.2/2.5" percent={128} color="#1eb980" />
+            <GoalProgress label={<span style={{ color: "#000" }}>Weekly Quiz Goal</span>} value="3/5" percent={60} color="#f0a500" />
           </Card>
         </div>
       </main>

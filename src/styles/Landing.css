@@ -1,4 +1,5 @@
-html, body, #root {
-  width: 100%;
-  overflow-x: hidden !important;
+html, body {
+  height: auto !important;
+  margin: 0;
+  padding: 0;
 }
